@@ -355,6 +355,7 @@ footer p {
     display: flex;
     flex-direction: column;
     width: 50%;
+    height: 50%;
     align-items: center;
   }
   section.conteiner {
@@ -371,10 +372,11 @@ footer p {
   justify-content: center;
   color: white;
 }
-.pageLogin h2{
+.login-H1{
   text-align: center;
   margin: 40px 0px;
 }
+
 .pageLogin img{
   height: 15vh;
   width: 15vw;
