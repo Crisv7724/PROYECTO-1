@@ -41,7 +41,12 @@ nav a:hover {
   height: 50px;
   width: 50px;
 }
-
+.icon-nav {
+  height: 50px;
+  width: 50px;
+  display: none;
+}
+.icon-nav,
 .icon:hover {
   cursor: pointer;
   transition: 0.4s;
@@ -86,15 +91,16 @@ form input {
   margin-top: 5px;
   border-color: #272626c9;
   border-radius: 5px;
-  width: 25vw;
+  width: auto;
   font-size: 19px;
 }
 
 form button {
   font-size: 19px;
+  padding: 2px 2px 2px 2px;
   font-style: oblique;
   margin-top: 5px;
-  width: 5vw;
+  width: auto;
   background-color: #005caa;
   color: white;
   border-radius: 5px;
@@ -144,6 +150,8 @@ main {
   align-items: center;
   justify-content: center;
   color: #ffffff;
+  background-position: center;
+  background-size: cover;
 }
 
 .box-row {
@@ -302,4 +310,39 @@ footer p {
   color: white;
   padding: 0px 40px 0px 40px;
   font-size: 12px;
+}
+
+@media (max-width: 1130px) {
+  .icon {
+    display: none;
+  }
+  .icon-nav {
+    display: block;
+  }
+}
+@media (max-width: 1060px) {
+  header a {
+    display: none;
+  }
+}
+@media (max-width: 950px) {
+  .opinions {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .opiMinBox {
+    text-align: center;
+  }
+  .opinionBox {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+  }
+  section.conteiner {
+    width: 100%;
+    height: 60vh;
+  }
 }
