@@ -37,13 +37,12 @@ nav a:hover {
   color: #00adef;
 }
 
-#login{
+#login {
   background-image: url(assets/userIcon.svg);
   background-repeat: no-repeat;
   background-size: contain;
   font-size: 45px;
-  color:rgba(95, 158, 160, 0)
-  
+  color: rgba(95, 158, 160, 0);
 }
 .icons {
   display: flex;
@@ -329,8 +328,8 @@ footer p {
   .icon {
     display: none;
   }
-  #login{
-    display:none;
+  #login {
+    display: none;
   }
   .icon-nav {
     display: block;
@@ -364,7 +363,8 @@ footer p {
   }
 }
 /* Esta parte esta dedicada a darle estilo a la pagina de login */
-.pageLogin{
+
+.pageLogin {
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -372,18 +372,18 @@ footer p {
   justify-content: center;
   color: white;
 }
-.login-H1{
+.login-H1 {
   text-align: center;
   margin: 40px 0px;
 }
 
-.pageLogin img{
+.pageLogin img {
   height: 15vh;
-  width: 15vw;
+  width: auto;
 }
-.loginbox{
+.loginbox {
   height: 40vh;
-  width: 30vw;
+  width: auto;
   background-color: #8cd2ee;
   border-radius: 10px;
   display: flex;
@@ -391,26 +391,37 @@ footer p {
   align-items: center;
   justify-content: center;
 }
-.loginbox input{
+.loginbox input {
   margin-bottom: 50px;
   text-align: center;
+  width: 100%;
 }
-.loginbox a{
+.loginbox a {
   margin-top: 20px;
   color: rgb(36, 36, 36);
 }
-.loginbox a:hover{
+.loginbox a:hover {
   color: #005baa;
   transition: 0.4s;
 }
-.loginbox button{
-padding: 5px 5px;
-border-radius: 3px;
-font-size: 15px;
-color: white;
-background-color: grey;
-font-weight: 600;
+.loginbox button {
+  padding: 5px 5px;
+  border-radius: 3px;
+  font-size: 15px;
+  color: white;
+  background-color: grey;
+  font-weight: 600;
 }
-.loginbox button:hover{
+.loginbox button:hover {
   cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .loginbox {
+    padding: 30px 0;
+    height: auto;
+  }
+  .pageLogin img {
+    height: 15vh;
+  }
 }
